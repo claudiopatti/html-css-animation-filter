@@ -5,3 +5,86 @@
 .ex-1-square:hover {
     background-color: red;
 }
+
+.ex-2-square {
+    transition:  2s;
+}
+
+.ex-2-square:active {
+    width: 1000px;
+}
+
+.ex-3-square {
+    transition:  3s;
+}
+
+.ex-3-square:hover {
+    border-radius: 100%;
+}
+
+.ex-4-square {
+    transition:  5s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+.ex-5-square {
+    transition: all 1s, 
+}
+
+.ex-5-square:hover {
+    transform: scale(2);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+ 
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img{
+    transition: all 5s;
+}
+
+.ex-7-img:hover {
+    filter: invert(100%);
+    transform: rotate(180deg);
+}
+
+.ex-8-img{
+    transition: all 5s;
+}
+
+.ex-8-img:hover {
+    filter: brightness(0.25);
+    transform: skewY(20deg);
+    border-radius: 50%;
+}
+
+.ex-9-img{
+    transition: all 5s;
+}
+
+.ex-9-img:hover {
+    filter: sepia(0.5) contrast(0.75);
+    border-radius: 50%;
+    transform: scale(0.75); 
+}
+
+.ex-10-icon {
+   animation: spin 10s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
